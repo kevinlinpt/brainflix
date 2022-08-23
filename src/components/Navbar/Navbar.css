@@ -1,0 +1,149 @@
+.section-padding {
+  padding: 0 1rem 1rem 1rem;
+}
+@media screen and (min-width: 768px) {
+  .section-padding {
+    padding: 0;
+  }
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  color: #ffffff;
+  padding-top: 1rem;
+  list-style-type: none;
+  max-height: 12.5rem;
+}
+@media screen and (min-width: 768px) {
+  .navbar-container {
+    flex-direction: row;
+    height: 5rem;
+    padding-left: 2.25rem;
+    padding-top: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .navbar-container {
+    padding-left: 5rem;
+    width: 66%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-logo {
+    width: 7.5rem;
+  }
+}
+
+.middle-container {
+  display: flex;
+  padding: 0.75rem 0 0.75rem 0;
+}
+
+.right-container-tablet {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 768px) {
+  .right-container-tablet {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+.user-image-container {
+  border-radius: 50%;
+  height: 2.7rem;
+  width: 2.7rem;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .user-image-container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .user-image-container__tablet {
+    padding: 0 2.2rem 0 1.2rem;
+  }
+}
+
+.search-box-container {
+  padding-right: 1rem;
+  height: 2.5rem;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .search-box-container {
+    width: 15rem;
+    padding-right: 1.2rem;
+  }
+}
+
+.search-box {
+  height: 100%;
+  width: 100%;
+  padding-left: 0.625rem;
+  background: url(../../assets/Icons/search.svg) no-repeat left;
+  background-origin: content-box;
+  background-color: #fafafa;
+  text-indent: 1.563rem;
+  border-color: #e1e1e1;
+  border-radius: 0.25rem;
+  border-width: 0.063rem;
+}
+
+::-moz-placeholder {
+  color: #323232;
+}
+
+:-ms-input-placeholder {
+  color: #323232;
+}
+
+::placeholder {
+  color: #323232;
+}
+
+.upload-icon {
+  height: 100%;
+  max-height: 1.5rem;
+  width: 15%;
+}
+
+.button h4 {
+  width: 100%;
+  padding-right: 2.109rem;
+}
+
+.avatar__mobile {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background-color: #e1e1e1;
+}
+@media screen and (min-width: 768px) {
+  .avatar__mobile {
+    display: none;
+  }
+}
+
+.avatar__tablet {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .avatar__tablet {
+    display: block;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    background-color: #e1e1e1;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

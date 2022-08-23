@@ -1,0 +1,19 @@
+@use "../../styles/partials/media-query.scss" as *;
+@use "../../styles/partials/colors.scss" as *;
+
+.video-player-container {
+  background-color: $secondary-color-darkblack;
+}
+
+.video-player {
+  height: 100%;
+  width: 100%;
+  @include tablet {
+    padding: 0 2.25rem 0 2.25rem;
+  }
+  @include desktop {
+    display: flex;
+    max-width: 58.5rem;
+    margin: auto;
+  }
+}

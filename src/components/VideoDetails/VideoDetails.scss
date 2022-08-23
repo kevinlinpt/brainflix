@@ -1,0 +1,95 @@
+@use "../../styles/partials/media-query.scss" as *;
+@use "../../styles/partials/colors.scss" as *;
+
+.video-details-container {
+  margin: 1.5rem 1rem 1rem 1rem;
+  @include tablet {
+    margin: 2.25rem 2.25rem 1.5rem 2.25rem;
+  }
+  @include desktop {
+    margin: auto;
+    padding: 2.25rem 0 3rem 0;
+  }
+}
+
+.video-description {
+  padding-right: 1.5rem;
+}
+
+.video-title {
+  display: flex;
+}
+
+.channel-name {
+  padding-bottom: 1rem;
+  @include tablet {
+    margin-right: 2rem;
+    padding: 0;
+  }
+}
+
+.video-info-container {
+  display: flex;
+  justify-content: space-between;
+  @include tablet {
+    padding-top: 1.5rem;
+  }
+  @include desktop {
+    padding-right: 0.5rem;
+  }
+}
+
+.video-info-left-container {
+  @include tablet {
+    display: flex;
+  }
+}
+
+.video-info-right-container {
+  width: 50%;
+  @include tablet {
+    display: flex;
+    width: auto;
+  }
+}
+
+.video-views-container {
+  display: flex;
+  margin-bottom: 1rem;
+  height: 1rem;
+  @include tablet {
+    margin-right: 2rem;
+  }
+  & h2 {
+    padding-left: 0.5rem;
+  }
+  & img {
+    width: auto;
+  }
+}
+
+.video-likes-container {
+  display: flex;
+  height: 1rem;
+  & .likesIcon {
+    height: 100%;
+  }
+  & h2 {
+    padding-right: 1rem;
+    padding-left: 0.5rem;
+  }
+  & img {
+    width: auto;
+  }
+}
+
+.line-break {
+  @include tablet {
+    display: none;
+  }
+  &__tablet > hr {
+    @include tablet {
+      margin: 0 0 1.5rem 0;
+    }
+  }
+}

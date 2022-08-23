@@ -1,0 +1,63 @@
+@use "../../styles/partials/media-query.scss" as *;
+@use "../../styles/partials/colors.scss" as *;
+
+.videolist-container {
+  margin: 0 1rem 1rem 1rem;
+  @include tablet {
+    margin: 0 2.25rem 1.5rem 2.25rem;
+  }
+  @include desktop {
+    margin: 0 1.5rem 1.5rem 1.5rem;
+    height: 100%;
+  }
+}
+
+.videolist-video-container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  @include desktop {
+    padding-bottom: 1rem;
+  }
+}
+
+.videolist-image-container {
+  // width: 60%;
+  height: 100%;
+  border: none;
+}
+
+.videolist-poster {
+  background-color: $secondary-color-mercury;
+  height: 4.5rem;
+  width: 7.5rem;
+  border-radius: 0.25rem;
+}
+
+.videolist-info-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  width: 100%;
+}
+
+.videolist-title {
+  margin-bottom: 0.75rem;
+  line-height: 1.25rem;
+  height: 2.5rem;
+  // hides overflow and displays ellipsis after two lines
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  @include tablet {
+    width: 11rem;
+  }
+}
+
+.videolist-label {
+  padding-bottom: 1rem;
+  @include desktop {
+    padding-top: 2.25rem;
+  }
+}

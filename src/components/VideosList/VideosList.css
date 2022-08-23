@@ -1,0 +1,42 @@
+.videolist-container {
+  padding: 0 1rem 1rem 1rem;
+}
+
+.videolist-video-container {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.videolist-image-container {
+  height: 100%;
+  border: none;
+}
+
+.videolist-poster {
+  background-color: #e1e1e1;
+  height: 4.5rem;
+  width: 7.5rem;
+  border-radius: 0.25rem;
+}
+
+.videolist-info-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  width: 80%;
+}
+
+.videolist-title {
+  margin-bottom: 0.75rem;
+  line-height: 1.25rem;
+  height: 2.5rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.videolist-label {
+  padding-bottom: 1rem;
+}/*# sourceMappingURL=VideosList.css.map */

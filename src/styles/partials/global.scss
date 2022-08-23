@@ -1,0 +1,129 @@
+@use "./media-query.scss" as *;
+@use "./colors.scss" as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+  list-style-type: none;
+  font-family: "AvenirNextRegular", Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: "AvenirNextRegular";
+  src: url("../../assets/Font/AvenirNextLTPro-Regular.otf")
+      format("embedded-opentype"),
+    url("../../assets/Font/AvenirNextLTPro-Regular.otf") format("woff"),
+    url("../../assets/Font/AvenirNextLTPro-Regular.otf") format("woff2"),
+    url("../../assets/Font/AvenirNextLTPro-Regular.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "AvenirNextBold";
+  src: url("../../assets/Font/AvenirNextLTPro-Bold.otf")
+      format("embedded-opentype"),
+    url("../../assets/Font/AvenirNextLTPro-Bold.otf") format("woff"),
+    url("../../assets/Font/AvenirNextLTPro-Bold.otf") format("woff2"),
+    url("../../assets/Font/AvenirNextLTPro-Bold.otf") format("truetype");
+}
+/* Logos & Images */
+// .logo {
+//   display: flex;
+// }
+
+img {
+  width: 100%;
+}
+
+/* All Text Styles (text size, line height, text weight) */
+.page-header {
+  // font-size: 1.5rem;
+  // line-height: 2rem;
+  @include tablet {
+    font-size: 3.75rem;
+    line-height: 4.25rem;
+    font-weight: 700;
+  }
+}
+.section-header {
+  @include tablet {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    font-weight: 700;
+  }
+}
+.subheader {
+  font-size: 0.813rem;
+  line-height: 1.125rem;
+  font-weight: 700;
+  @include tablet {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-weight: 700;
+  }
+  &__silver {
+    color: $primary-color-silver;
+  }
+}
+.body-copy {
+  font-size: 0.813rem;
+  line-height: 1.125rem;
+  font-weight: 400;
+  @include tablet {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-weight: 400;
+  }
+  &__silver {
+    color: $primary-color-silver;
+  }
+}
+.label-button {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  @include tablet {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+  }
+}
+
+hr {
+  height: 0.063rem;
+  color: $secondary-color-mercury;
+  margin: 1rem 0 1rem 0;
+  @include tablet {
+    margin: 1.5rem 0 1.5rem 0;
+  }
+  &.hr__removed {
+    @include desktop {
+      height: 0.263rem;
+      display: none;
+    }
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  min-width: 9.375rem;
+  padding-left: 0.2rem;
+  height: 2.5rem;
+  background-color: $primary-color-blue;
+  color: $primary-color-white;
+  border-radius: 0.25rem;
+  border-width: 0;
+  font-size: 1rem;
+  @include tablet {
+    width: 9.375rem;
+  }
+}
+
+.button:hover {
+  background-color: $secondary-color-darkblue;
+}
