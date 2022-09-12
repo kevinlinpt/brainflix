@@ -1,15 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import "./VideosList.scss";
-import videoDetails from "../../data/video-details.json";
-import videoListData from "../../data/videos.json";
+import { Link } from "react-router-dom";
 
-function VideosList({ currentVideoId, setCurrentVideo }) {
-  const [videoList, setVideoList] = useState(videoListData);
-  const selectVideo = (id) => {
-    setCurrentVideo(id);
-  };
-  console.log(videoList);
-  console.log(videoDetails);
+function VideosList({ currentVideo, videoList }) {
   return (
     <>
       <div className="videolist-container">
@@ -17,22 +10,30 @@ function VideosList({ currentVideoId, setCurrentVideo }) {
           NEXT VIDEOS
         </h2>
         {videoList
-          .filter((video) => video.id !== currentVideoId)
+          .filter((video) => video.id !== currentVideo.id)
           .map((video) => {
             return (
-              <div
-                className="videolist-video-container"
-                key={video.id}
-                onClick={() => selectVideo(video.id)}
-              >
-                <div className="videolist-image-container">
-                  <img className="videolist-poster" src={video.image} />
+              <Link to={`/videos/${video.id}`} key={video.id}>
+                <div
+                  className="videolist-video-container"
+                >
+                  <div className="videolist-image-container">
+                    <img
+                      className="videolist-poster"
+                      src={video.image}
+                      alt="video poster"
+                    />
+                  </div>
+                  <div className="videolist-info-container">
+                    <div className="videolist-title subheader">
+                      {video.title}
+                    </div>
+                    <div className="channel-name body-copy">
+                      {video.channel}
+                    </div>
+                  </div>
                 </div>
-                <div className="videolist-info-container">
-                  <div className="videolist-title subheader">{video.title}</div>
-                  <div className="channel-name body-copy">{video.channel}</div>
-                </div>
-              </div>
+              </Link>
             );
           })}
       </div>

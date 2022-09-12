@@ -1,0 +1,29 @@
+@use "../styles/partials/media-query.scss" as *;
+@use "../styles/partials/colors.scss" as *;
+
+.desktop-container {
+  @include desktop {
+    display: flex;
+    width: 63.75rem;
+    margin: auto;
+  }
+}
+
+.desktop-left-container {
+  @include desktop {
+  }
+}
+
+.desktop-right-container {
+  @include desktop {
+    min-height: 10rem;
+  }
+}
+
+.vertical-divider {
+  @include desktop {
+    border-left: 0.125rem solid $secondary-color-mercury;
+    margin-bottom: 10rem;
+    height:100%;
+  }
+}

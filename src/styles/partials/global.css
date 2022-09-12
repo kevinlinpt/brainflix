@@ -22,11 +22,15 @@ img {
 }
 
 /* All Text Styles (text size, line height, text weight) */
+.page-header {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
 @media screen and (min-width: 768px) {
   .page-header {
-    font-size: 3.75rem;
-    line-height: 4.25rem;
-    font-weight: 700;
+    font-size: 2.063rem;
+    line-height: 2.75rem;
+    font-family: AvenirNextBold;
   }
 }
 
@@ -34,7 +38,7 @@ img {
   .section-header {
     font-size: 2.25rem;
     line-height: 2.75rem;
-    font-weight: 700;
+    font-family: AvenirNextBold;
   }
 }
 
@@ -47,11 +51,15 @@ img {
   .subheader {
     font-size: 0.875rem;
     line-height: 1.375rem;
-    font-weight: 700;
   }
 }
 .subheader__silver {
   color: #afafaf;
+}
+@media screen and (min-width: 768px) {
+  .subheader__bold {
+    font-family: AvenirNextBold;
+  }
 }
 
 .body-copy {
@@ -73,20 +81,67 @@ img {
 .label-button {
   font-size: 0.75rem;
   line-height: 1.25rem;
-  font-weight: 700;
 }
 @media screen and (min-width: 768px) {
   .label-button {
     font-size: 0.875rem;
     line-height: 1.25rem;
-    font-weight: 700;
+  }
+}
+.label-button__upload-mobile {
+  color: #0095ff;
+  margin: 2rem 0 2rem 0;
+}
+@media screen and (min-width: 768px) {
+  .label-button__upload-mobile {
+    display: none;
+  }
+}
+.label-button__upload-tablet {
+  color: #0095ff;
+  margin: 1.5rem 0 1.5rem 0;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .label-button__upload-tablet {
+    display: block;
+    padding-right: 5rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .label-button__upload-tablet {
+    margin: 0;
   }
 }
 
 hr {
   height: 0.063rem;
-  color: #e1e1e1;
+  background-color: #e1e1e1;
+  border: none;
   margin: 1rem 0 1rem 0;
+}
+@media screen and (min-width: 768px) {
+  hr {
+    margin: 1.5rem 0 1.5rem 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  hr.hr__removed-desktop {
+    height: 0.263rem;
+    display: none;
+  }
+}
+hr.hr__removed-mobile {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  hr.hr__removed-mobile {
+    display: block;
+    margin: 0 0 1.5rem 0;
+  }
+}
+hr.hr__upload {
+  margin: 0;
 }
 
 .button {
@@ -101,10 +156,11 @@ hr {
   color: #ffffff;
   border-radius: 0.25rem;
   border-width: 0;
+  font-size: 1rem;
 }
 @media screen and (min-width: 768px) {
   .button {
-    width: 33%;
+    width: 9.375rem;
   }
 }
 

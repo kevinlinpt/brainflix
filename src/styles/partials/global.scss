@@ -39,19 +39,19 @@ img {
 
 /* All Text Styles (text size, line height, text weight) */
 .page-header {
-  // font-size: 1.5rem;
-  // line-height: 2rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
   @include tablet {
-    font-size: 3.75rem;
-    line-height: 4.25rem;
-    font-weight: 700;
+    font-size: 2.063rem;
+    line-height: 2.75rem;
+    font-family: AvenirNextBold;
   }
 }
 .section-header {
   @include tablet {
     font-size: 2.25rem;
     line-height: 2.75rem;
-    font-weight: 700;
+    font-family: AvenirNextBold;
   }
 }
 .subheader {
@@ -61,10 +61,14 @@ img {
   @include tablet {
     font-size: 0.875rem;
     line-height: 1.375rem;
-    font-weight: 700;
   }
   &__silver {
     color: $primary-color-silver;
+  }
+  &__bold {
+    @include tablet {
+      font-family: AvenirNextBold;
+    }
   }
 }
 .body-copy {
@@ -82,27 +86,60 @@ img {
 }
 .label-button {
   font-size: 0.75rem;
+  padding-right: 2.109rem;
   line-height: 1.25rem;
-  font-weight: 700;
+  width: 100%;
   @include tablet {
     font-size: 0.875rem;
     line-height: 1.25rem;
-    font-weight: 700;
+  }
+  &__upload-mobile {
+    color: $primary-color-blue;
+    margin: 2rem 0 2rem 0;
+    @include tablet {
+      display: none;
+    }
+  }
+  &__upload-tablet {
+    color: $primary-color-blue;
+    margin: 1.5rem 0 1.5rem 0;
+    display: none;
+    @include tablet {
+      display: block;
+      padding-right: 5rem;
+    }
+    @include desktop {
+      margin: 0;
+    }
+  }
+  &__delete{
+    padding-right:0.25rem;
   }
 }
 
 hr {
   height: 0.063rem;
-  color: $secondary-color-mercury;
+  background-color: $secondary-color-mercury;
+  border: none;
   margin: 1rem 0 1rem 0;
   @include tablet {
     margin: 1.5rem 0 1.5rem 0;
   }
-  &.hr__removed {
+  &.hr__removed-desktop {
     @include desktop {
       height: 0.263rem;
       display: none;
     }
+  }
+  &.hr__removed-mobile {
+    display: none;
+    @include tablet {
+      display: block;
+      margin: 0 0 1.5rem 0;
+    }
+  }
+  &.hr__upload {
+    margin: 0;
   }
 }
 
@@ -121,6 +158,10 @@ hr {
   font-size: 1rem;
   @include tablet {
     width: 9.375rem;
+  }
+  &__delete-comment {
+    font-size: 0.75rem;
+    text-align: center;
   }
 }
 

@@ -1,0 +1,21 @@
+@media screen and (min-width: 1280px) {
+  .desktop-container {
+    display: flex;
+    width: 63.75rem;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .desktop-right-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .vertical-divider {
+    border-left: 0.125rem solid #e1e1e1;
+  }
+}/*# sourceMappingURL=HomePage.css.map */

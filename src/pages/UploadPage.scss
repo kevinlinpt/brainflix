@@ -1,0 +1,89 @@
+@use "../styles/partials/media-query.scss" as *;
+@use "../styles/partials/colors.scss" as *;
+
+.upload-container {
+  margin: 0 1rem 1rem 1rem;
+  @include tablet {
+    margin: 0 2.25rem 1rem 2.25rem;
+  }
+  @include desktop {
+    width: 63.75rem;
+    margin: auto;
+  }
+}
+
+.upload-heading {
+  padding: 1.5rem 0 1.5rem 0;
+  @include tablet {
+    padding: 2.25rem 0 1.5rem 0;
+  }
+}
+
+.upload-content-container {
+  @include desktop {
+    display: flex;
+    height: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+.upload-thumbnail-container {
+  width: 50%;
+  margin-right: 2rem;
+}
+
+.upload-details-container {
+  width: 100%;
+}
+
+.upload-image-container {
+  padding-bottom: 1rem;
+}
+
+.upload-image {
+  border-radius: 0.25rem;
+  @include desktop {
+    width: 100%;
+    max-height: 10.35rem;
+  }
+}
+
+.upload-form-container {
+  padding-bottom: 1.5rem;
+}
+
+.upload-form {
+  display: flex;
+  justify-content: flex-start;
+  background-color: $secondary-color-alabaster;
+  border-color: $secondary-color-mercury;
+  min-height: 2.25rem;
+  min-width: 15rem;
+  border-radius: 0.25rem;
+  border-width: 0.063rem;
+  padding: 0.75rem;
+  width: 100%;
+  @include tablet {
+    height: 100%;
+    min-height: 2.5rem;
+    padding: 1rem;
+  }
+  &__title {
+    height: 2.5rem;
+    width: 100%;
+  }
+  &__description {
+    height: 5rem;
+    width: 100%;
+  }
+}
+
+.upload-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include tablet {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
