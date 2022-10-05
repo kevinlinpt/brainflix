@@ -1,49 +1,48 @@
-.videolist-container {
+.videolist {
   margin: 0 1rem 1rem 1rem;
 }
 @media screen and (min-width: 768px) {
-  .videolist-container {
+  .videolist {
     margin: 0 2.25rem 1.5rem 2.25rem;
   }
 }
 @media screen and (min-width: 1280px) {
-  .videolist-container {
-    margin: 0 1.5rem 1.5rem 1.5rem;
-    height: 100%;
+  .videolist {
+    margin: 0 1.5rem 0.5rem 1.5rem;
   }
 }
 
-.videolist-video-container {
+.videolist__video {
   display: flex;
   justify-content: space-between;
   height: 100%;
 }
 @media screen and (min-width: 1280px) {
-  .videolist-video-container {
+  .videolist__video {
     padding-bottom: 1rem;
   }
 }
 
-.videolist-image-container {
+.videolist__video_image_container {
   height: 100%;
   border: none;
 }
 
-.videolist-poster {
+.videolist__video_image {
   background-color: #e1e1e1;
   height: 4.5rem;
   width: 7.5rem;
   border-radius: 0.25rem;
 }
 
-.videolist-info-container {
+.videolist__info {
   display: flex;
   flex-direction: column;
   padding-left: 1rem;
   width: 100%;
 }
 
-.videolist-title {
+.videolist__info_type_title {
   margin-bottom: 0.75rem;
   line-height: 1.25rem;
   height: 2.5rem;
@@ -53,16 +52,16 @@
   -webkit-box-orient: vertical;
 }
 @media screen and (min-width: 768px) {
-  .videolist-title {
+  .videolist__info_type_title {
     width: 11rem;
   }
 }
 
-.videolist-label {
+.videolist__label {
   padding-bottom: 1rem;
 }
 @media screen and (min-width: 1280px) {
-  .videolist-label {
+  .videolist__label {
     padding-top: 2.25rem;
   }
 }/*# sourceMappingURL=VideosList.css.map */

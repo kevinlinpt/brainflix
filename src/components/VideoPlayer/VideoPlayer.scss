@@ -1,11 +1,11 @@
 @use "../../styles/partials/media-query.scss" as *;
 @use "../../styles/partials/colors.scss" as *;
 
-.video-player-container {
+.video-player {
   background-color: $secondary-color-darkblack;
 }
 
-.video-player {
+.video-player__video {
   height: 100%;
   width: 100%;
   aspect-ratio: 16 / 9;

@@ -1,44 +1,44 @@
-.existing-comments {
+.comments {
+  margin: 0 1rem 0 1rem;
+}
+@media screen and (min-width: 768px) {
+  .comments {
+    margin: 0 2.25rem 0 2.25rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comments {
+    margin: auto;
+  }
+}
+
+.comments__existing {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
-.comment-section-container {
-  margin: 0 1rem 0 1rem;
-}
-@media screen and (min-width: 768px) {
-  .comment-section-container {
-    margin: 0 2.25rem 0 2.25rem;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .comment-section-container {
-    margin: auto;
-  }
-}
-
-.enter-comments-section {
+.comments__form {
   display: flex;
   width: 100%;
   padding-top: 1rem;
 }
 @media screen and (min-width: 1280px) {
-  .enter-comments-section {
+  .comments__form {
     padding-right: 1.5rem;
   }
 }
 
-.left-panel {
+.comments__form_left_panel {
   padding-top: 1.25rem;
 }
 @media screen and (min-width: 1280px) {
-  .left-panel {
+  .comments__form_left_panel {
     padding-left: 0.5rem;
   }
 }
 
-.right-panel {
+.comments__form_right_panel {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -47,19 +47,19 @@
   padding-left: 1rem;
 }
 @media screen and (min-width: 1280px) {
-  .right-panel {
+  .comments__form_right_panel {
     padding-left: 2rem;
   }
 }
 
-.bottom-panel {
+.comments__form_bottom_panel {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
-  .bottom-panel {
+  .comments__form_bottom_panel {
     flex-wrap: nowrap;
   }
 }
@@ -103,7 +103,7 @@
   border-color: #d22d2d;
 }
 
-.comment-button {
+.comment__button {
   display: flex;
   justify-content: flex-end;
   padding-top: 1rem;
@@ -111,11 +111,14 @@
   height: 40%;
 }
 @media screen and (min-width: 768px) {
-  .comment-button {
+  .comment__button {
     width: 9.375rem;
     padding: 0;
     margin-left: 1.5rem;
   }
+}
+.comment__button_delete {
+  margin: 0.5rem 0 0 0;
 }
 
 input::-moz-placeholder {
@@ -140,27 +143,27 @@ input::placeholder {
   }
 }
 
-.comment-container .left-panel__existing img {
+.comment-container .comment-container__left_panel img {
   border-radius: 100%;
 }
-.right-panel__existing {
+.comment-container__right_panel {
   width: 100%;
   padding-left: 1rem;
   word-break: break-word;
 }
 @media screen and (min-width: 1280px) {
-  .right-panel__existing {
+  .comment-container__right_panel {
     padding-left: 2rem;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .left-panel__existing {
+  .comment-container__left_panel {
     padding-left: 0.5rem;
   }
 }
 
-.user-container {
+.comment-container__user {
   display: flex;
   justify-content: space-between;
   padding-bottom: 0.75rem;

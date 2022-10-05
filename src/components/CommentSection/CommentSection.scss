@@ -1,13 +1,7 @@
 @use "../../styles/partials/media-query.scss" as *;
 @use "../../styles/partials/colors.scss" as *;
 
-.existing-comments {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.comment-section-container {
+.comments {
   margin: 0 1rem 0 1rem;
   @include tablet {
     margin: 0 2.25rem 0 2.25rem;
@@ -17,8 +11,14 @@
   }
 }
 
+.comments__existing {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 // Comment Box Container & Children
-.enter-comments-section {
+.comments__form {
   display: flex;
   width: 100%;
   padding-top: 1rem;
@@ -27,14 +27,14 @@
   }
 }
 
-.left-panel {
+.comments__form_left_panel {
   padding-top: 1.25rem;
   @include desktop {
     padding-left: 0.5rem;
   }
 }
 
-.right-panel {
+.comments__form_right_panel {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -46,18 +46,15 @@
   }
 }
 
-.bottom-panel {
+.comments__form_bottom_panel {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  // margin-left: 3.1rem;
   width: 100%;
   @include tablet {
-    // margin-left: 6.5rem;
     flex-wrap: nowrap;
   }
   @include desktop {
-    // margin-left: 8rem;
   }
 }
 
@@ -97,7 +94,7 @@
   border-color: $tertiary-color-red;
 }
 
-.comment-button {
+.comment__button {
   display: flex;
   justify-content: flex-end;
   padding-top: 1rem;
@@ -108,7 +105,7 @@
     padding: 0;
     margin-left: 1.5rem;
   }
-  &__delete {
+  &_delete {
     margin: 0.5rem 0 0 0;
   }
 }
@@ -126,7 +123,7 @@ input::placeholder {
   }
 }
 
-.comment-container .left-panel__existing {
+.comment-container .comment-container__left_panel {
   & img {
     border-radius: 100%;
   }
@@ -136,7 +133,7 @@ input::placeholder {
   }
 }
 
-.right-panel__existing {
+.comment-container__right_panel {
   width: 100%;
   padding-left: 1rem;
   word-break: break-word;
@@ -145,13 +142,13 @@ input::placeholder {
   }
 }
 
-.left-panel__existing {
+.comment-container__left_panel {
   @include desktop {
     padding-left: 0.5rem;
   }
 }
 
-.user-container {
+.comment-container__user {
   display: flex;
   justify-content: space-between;
   padding-bottom: 0.75rem;

@@ -1,13 +1,13 @@
-.video-details-container {
+.video-details {
   margin: 1.5rem 1rem 1rem 1rem;
 }
 @media screen and (min-width: 768px) {
-  .video-details-container {
+  .video-details {
     margin: 2.25rem 2.25rem 1.5rem 2.25rem;
   }
 }
 @media screen and (min-width: 1280px) {
-  .video-details-container {
+  .video-details {
     margin: auto;
     padding: 2.25rem 0 3rem 0;
   }
@@ -17,80 +17,80 @@
   padding-right: 1.5rem;
 }
 
-.video-title {
+.video-details__title {
   display: flex;
 }
 
-.channel-name {
+.video-details__info_left_channel {
   padding-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
-  .channel-name {
+  .video-details__info_left_channel {
     margin-right: 2rem;
     padding: 0;
   }
 }
 
-.video-info-container {
+.video-details__info {
   display: flex;
   justify-content: space-between;
 }
 @media screen and (min-width: 768px) {
-  .video-info-container {
+  .video-details__info {
     padding-top: 1.5rem;
   }
 }
 @media screen and (min-width: 1280px) {
-  .video-info-container {
+  .video-details__info {
     padding-right: 0.5rem;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .video-info-left-container {
+  .video-details__info_left {
     display: flex;
   }
 }
 
-.video-info-right-container {
+.video-details__info_right {
   width: 50%;
 }
 @media screen and (min-width: 768px) {
-  .video-info-right-container {
+  .video-details__info_right {
     display: flex;
     width: auto;
   }
 }
 
-.video-views-container {
+.video-details__info_right_views_container {
   display: flex;
   margin-bottom: 1rem;
   height: 1rem;
 }
 @media screen and (min-width: 768px) {
-  .video-views-container {
+  .video-details__info_right_views_container {
     margin-right: 2rem;
   }
 }
-.video-views-container h2 {
+.video-details__info_right_views_container h2 {
   padding-left: 0.5rem;
 }
-.video-views-container img {
+.video-details__info_right_views_container img {
   width: auto;
 }
 
-.video-likes-container {
+.video-details__info_right_likes_container {
   display: flex;
   height: 1rem;
 }
-.video-likes-container .likesIcon {
+.video-details__info_right_likes_container .likesIcon {
   height: 100%;
 }
-.video-likes-container h2 {
+.video-details__info_right_likes_container h2 {
   padding-right: 1rem;
   padding-left: 0.5rem;
 }
-.video-likes-container img {
+.video-details__info_right_likes_container img {
   width: auto;
 }
 

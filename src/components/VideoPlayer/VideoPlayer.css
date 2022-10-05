@@ -1,19 +1,19 @@
-.video-player-container {
+.video-player {
   background-color: #000000;
 }
 
-.video-player {
+.video-player__video {
   height: 100%;
   width: 100%;
   aspect-ratio: 16/9;
 }
 @media screen and (min-width: 768px) {
-  .video-player {
+  .video-player__video {
     padding: 0 2.25rem 0 2.25rem;
   }
 }
 @media screen and (min-width: 1280px) {
-  .video-player {
+  .video-player__video {
     display: flex;
     max-width: 58.5rem;
     margin: auto;

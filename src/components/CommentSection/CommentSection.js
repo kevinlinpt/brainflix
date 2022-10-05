@@ -67,19 +67,19 @@ function CommentSection({
 
   return (
     <>
-      <div className="comment-section-container">
+      <div className="comments">
         <h2 className="subheader subheader__bold">
           {numberOfComments} Comments
         </h2>
-        <div className="enter-comments-section">
-          <div className="left-panel">
+        <div className="comments__form">
+          <div className="comments__form_left_panel">
             <img className="avatar" src={UserImage} alt="user avatar" />
           </div>
-          <div className="right-panel">
-            <h2 className="form-field-label subheader subheader__silver">
+          <div className="comments__form_right_panel">
+            <h2 className="comments__form_label subheader subheader__silver">
               JOIN THE CONVERSATION
             </h2>
-            <div className="bottom-panel">
+            <div className="comments__form_bottom_panel">
               <input
                 type="text"
                 comment="comment"
@@ -87,10 +87,10 @@ function CommentSection({
                 onChange={handleChange}
                 placeholder="Add a new comment"
               />
-              <div className="comment-button">
+              <div className="comment__button">
                 <button value="clear" className="button" onClick={postComment}>
                   <img
-                    className="button-icon"
+                    className="button__icon"
                     src={CommentIcon}
                     alt="comment button icon"
                   />
@@ -101,32 +101,32 @@ function CommentSection({
           </div>
         </div>
         {/* map through comments of the first array*/}
-        <div className="existing-comments">
+        <div className="comments__existing">
           {commentData.map((comments) => {
             const datePostedReadable = moment(comments.timestamp)
               .startOf("minutes")
               .fromNow();
             return (
-              <div className="comment-container-main" key={comments.id}>
+              <div className="comments__existing_main" key={comments.id}>
                 <hr />
                 <div className="comment-container">
-                  <div className="left-panel__existing">
+                  <div className="comment-container__left_panel">
                     <div className="avatar" alt="" />
                   </div>
-                  <div className="right-panel__existing">
-                    <div className="user-container">
-                      <div className="username subheader">{comments.name}</div>
-                      <div className="userdate body-copy body-copy__silver">
+                  <div className="comment-container__right_panel">
+                    <div className="comment-container__user">
+                      <div className="comment-container__user_name subheader">{comments.name}</div>
+                      <div className="comment-container__user_date body-copy body-copy__silver">
                         {datePostedReadable}
                       </div>
                     </div>
-                    <div className="user-comment body-copy">
+                    <div className="comment-container__user_comment body-copy">
                       {comments.comment}
                     </div>
-                    <div className="comment-button comment-button__delete">
+                    <div className="comment__button comment__button_delete">
                     <button
                       value="clear"
-                      className="button button__delete-comment"
+                      className="button button__delete_comment"
                       onClick={() => {deleteComment(comments.id)}}
                       key={comments.id}
                     >

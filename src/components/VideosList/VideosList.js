@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 function VideosList({ currentVideo, videoList }) {
   return (
     <>
-      <div className="videolist-container">
-        <h2 className="videolist-label subheader subheader__silver">
+      <div className="videolist">
+        <h2 className="videolist__label subheader subheader__silver">
           NEXT VIDEOS
         </h2>
         {videoList
@@ -15,20 +15,20 @@ function VideosList({ currentVideo, videoList }) {
             return (
               <Link to={`/videos/${video.id}`} key={video.id}>
                 <div
-                  className="videolist-video-container"
+                  className="videolist__video"
                 >
-                  <div className="videolist-image-container">
+                  <div className="videolist__video_image_container">
                     <img
-                      className="videolist-poster"
+                      className="videolist__video_image"
                       src={video.image}
                       alt="video poster"
                     />
                   </div>
-                  <div className="videolist-info-container">
-                    <div className="videolist-title subheader">
+                  <div className="videolist__info">
+                    <div className="videolist__info_type_title subheader">
                       {video.title}
                     </div>
-                    <div className="channel-name body-copy">
+                    <div className="videolist__info_type_channel body-copy">
                       {video.channel}
                     </div>
                   </div>

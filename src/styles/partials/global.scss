@@ -112,8 +112,8 @@ img {
       margin: 0;
     }
   }
-  &__delete{
-    padding-right:0.25rem;
+  &__delete {
+    padding-right: 0.25rem;
   }
 }
 
@@ -159,9 +159,15 @@ hr {
   @include tablet {
     width: 9.375rem;
   }
-  &__delete-comment {
+  &__delete_comment {
     font-size: 0.75rem;
     text-align: center;
+  }
+  &__icon {
+    height: 100%;
+    max-height: 1.2rem;
+    width: 1.2rem;
+    margin-left: 0.5rem;
   }
 }
 

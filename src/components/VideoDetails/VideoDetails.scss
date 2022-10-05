@@ -1,7 +1,7 @@
 @use "../../styles/partials/media-query.scss" as *;
 @use "../../styles/partials/colors.scss" as *;
 
-.video-details-container {
+.video-details {
   margin: 1.5rem 1rem 1rem 1rem;
   @include tablet {
     margin: 2.25rem 2.25rem 1.5rem 2.25rem;
@@ -16,11 +16,11 @@
   padding-right: 1.5rem;
 }
 
-.video-title {
+.video-details__title {
   display: flex;
 }
 
-.channel-name {
+.video-details__info_left_channel {
   padding-bottom: 1rem;
   @include tablet {
     margin-right: 2rem;
@@ -28,7 +28,7 @@
   }
 }
 
-.video-info-container {
+.video-details__info{
   display: flex;
   justify-content: space-between;
   @include tablet {
@@ -39,13 +39,13 @@
   }
 }
 
-.video-info-left-container {
+.video-details__info_left {
   @include tablet {
     display: flex;
   }
 }
 
-.video-info-right-container {
+.video-details__info_right {
   width: 50%;
   @include tablet {
     display: flex;
@@ -53,7 +53,7 @@
   }
 }
 
-.video-views-container {
+.video-details__info_right_views_container {
   display: flex;
   margin-bottom: 1rem;
   height: 1rem;
@@ -68,7 +68,7 @@
   }
 }
 
-.video-likes-container {
+.video-details__info_right_likes_container {
   display: flex;
   height: 1rem;
   & .likesIcon {

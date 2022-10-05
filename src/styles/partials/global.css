@@ -80,7 +80,9 @@ img {
 
 .label-button {
   font-size: 0.75rem;
+  padding-right: 2.109rem;
   line-height: 1.25rem;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .label-button {
@@ -112,6 +114,9 @@ img {
   .label-button__upload-tablet {
     margin: 0;
   }
+}
+.label-button__delete {
+  padding-right: 0.25rem;
 }
 
 hr {
@@ -162,6 +167,16 @@ hr.hr__upload {
   .button {
     width: 9.375rem;
   }
+}
+.button__delete_comment {
+  font-size: 0.75rem;
+  text-align: center;
+}
+.button__icon {
+  height: 100%;
+  max-height: 1.2rem;
+  width: 1.2rem;
+  margin-left: 0.5rem;
 }
 
 .button:hover {

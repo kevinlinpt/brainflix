@@ -8,38 +8,38 @@ import "./Navbar.scss";
 function Navbar() {
   return (
     <>
-      <nav className="navbar ">
-        <div className="navbar-container navbar-padding">
+      <nav className="navbar">
+        <div className="navbar__container navbar__padding">
           <Link to="/">
-            <div className="navbar-logo">
-              <img src={Logo} alt="Logo" className="Logo" />
+            <div className="navbar__container_logo">
+              <img src={Logo} alt="Logo" className="navbar__logo" />
             </div>
           </Link>
-          <div className="right-container-tablet">
-            <div className="middle-container">
-              <div className="search-box-container">
+          <div className="navbar__container_right_tablet">
+            <div className="navbar__container_middle">
+              <div className="navbar__container_search">
                 <input
                   type="text"
-                  className="search-box"
+                  className="navbar__search"
                   placeholder="Search"
                 />
               </div>
-              <div className="user-image-container">
-                <img className="avatar__mobile" src={UserImage} alt="user" />
+              <div className="navbar__container_user_image_mobile">
+                <img className="navbar_user_image_mobile" src={UserImage} alt="user" />
               </div>
             </div>
             <Link to="/upload">
               <button className="button">
                 <img
-                  className="button-icon"
+                  className="button__icon"
                   src={UploadIcon}
                   alt="upload icon"
                 />
                 <h4 className="label-button">UPLOAD</h4>
               </button>
             </Link>
-            <div className="user-image-container__tablet">
-              <img className="avatar__tablet" src={UserImage} alt="user" />
+            <div className="navbar__container_user_image_tablet">
+              <img className="navbar_user_image_tablet" src={UserImage} alt="user" />
             </div>
           </div>
         </div>

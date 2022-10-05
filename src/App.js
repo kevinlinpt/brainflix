@@ -4,16 +4,16 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Redirect,
 } from "react-router-dom";
 import React from "react";
-import HomePage from "./pages/HomePage"
-import UploadPage from "./pages/UploadPage";
-import FourOhFourPage from "./pages/FourOhFourPage";
+import Navbar from "./components/Navbar/Navbar";
+import HomePage from "./pages/HomePage/HomePage"
+import UploadPage from "./pages/UploadPage/UploadPage";
 
 function App() {
   return (
     <Router>
+      <Navbar/>
       <Switch>
         <Route exact path="/">
           <HomePage />
@@ -24,10 +24,6 @@ function App() {
         <Route path="/upload">
           <UploadPage />
         </Route>
-        <Route path="/404">
-          <FourOhFourPage />
-        </Route>
-        <Redirect to="/404" />
       </Switch>
     </Router>
   );

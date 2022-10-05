@@ -1,7 +1,7 @@
 @use "../../styles/partials/media-query.scss" as *;
 @use "../../styles/partials/colors.scss" as *;
 
-.videolist-container {
+.videolist {
   margin: 0 1rem 1rem 1rem;
   @include tablet {
     margin: 0 2.25rem 1.5rem 2.25rem;
@@ -11,7 +11,7 @@
   }
 }
 
-.videolist-video-container {
+.videolist__video {
   display: flex;
   justify-content: space-between;
   height: 100%;
@@ -20,27 +20,27 @@
   }
 }
 
-.videolist-image-container {
+.videolist__video_image_container {
   // width: 60%;
   height: 100%;
   border: none;
 }
 
-.videolist-poster {
+.videolist__video_image {
   background-color: $secondary-color-mercury;
   height: 4.5rem;
   width: 7.5rem;
   border-radius: 0.25rem;
 }
 
-.videolist-info-container {
+.videolist__info {
   display: flex;
   flex-direction: column;
   padding-left: 1rem;
   width: 100%;
 }
 
-.videolist-title {
+.videolist__info_type_title {
   margin-bottom: 0.75rem;
   line-height: 1.25rem;
   height: 2.5rem;
@@ -54,7 +54,7 @@
   }
 }
 
-.videolist-label {
+.videolist__label {
   padding-bottom: 1rem;
   @include desktop {
     padding-top: 2.25rem;
